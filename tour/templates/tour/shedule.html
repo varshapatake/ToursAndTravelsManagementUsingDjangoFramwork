@@ -1,0 +1,65 @@
+{% extends "tour/customer.html"%}
+{% load static %}
+{%block head%}
+<title>Shedule </title>
+<link rel="stylesheet" href="{% static 'css/validate_user_info.css' %}"/>
+{%endblock%}
+{% block body%}
+
+                 <table class="validate_user" width="100%" height="500px" style="background-color:white">
+                     <tr><td colspan="3"><center><u><font color="green" size="5">Shedules for Register  Packages</font></u></center></td></tr>
+                    {%for package in shedule%}
+                     <tr>
+                         <td><center>
+                             <img width="80px" height="100px" src="{% static 'images/tour.jpg' %}" />
+                             </center>
+
+                         </td>
+                         <td colspan="2"><center><b>
+                             <font color="blue" size="4">{{package.package_name}}</font>
+                             </b></center>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                         </td>
+                         <td><center>
+                             Start Date:
+                             </center>
+                         </td>
+                         <td>
+                             <center>
+                             {{package.date}}
+                             </center>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                         </td>
+                         <td>
+                             <center>
+                             Timing:
+                             </center><br><br>
+                         </td>
+                         <td>
+                             <center>
+                             {{package.time}}
+                             </center><br><br>
+                         </td>
+
+                     </tr>
+                     <tr>
+                         <td></td>
+                     </tr>
+                     <tr>
+                         <td></td>
+                     </tr>
+                     {%endfor%}
+                 </table>
+
+<div class="bottom" >
+    <img width="100%" height="100%" src="{% static 'images/login/loginbottom.jpg' %}" />
+</div>
+{%endblock %}
+
+

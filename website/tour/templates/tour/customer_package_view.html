@@ -1,0 +1,117 @@
+{% extends "tour/customer.html"%}
+{% load static %}
+{%block head%}
+
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+{%endblock%}
+{% block body%}
+<div class="table-responsive">
+
+     <div class="container" style="background-color:#F2D8D8">
+    <div class="row" >
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/tour/register_package/" target="_blank">
+          <img src="{% static 'images/shimala1.jpg' %}" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p><center><font size="3">Shimala {{shimala_cost}}/-</font></center></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/tour/register_package/" target="_blank">
+          <img src="{% static 'images/paris_new.jpg' %}" alt="Nature" style="width:100%">
+          <div class="caption">
+            <p><center> <font size="3">Paris {{paris_cost}}/-</font></center></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="//tour/register_package/" target="_blank">
+          <img src="{% static 'images/rome_new.jpg' %}" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p><center><font>Rome {{rome_cost}}/-</font></center></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/tour/register_package/" target="_blank">
+          <img src="{% static 'images/london_new.jpg' %}" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p><center> <font>London {{london_cost}}/-</font></center></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/tour/register_package/" target="_blank">
+          <img src="{% static 'images/dubai_new.jpg' %}" alt="Nature" style="width:100%">
+          <div class="caption">
+            <p> <center><font>Dubai {{dubai_cost}}/-</font></center></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/tour/register_package/" target="_blank">
+          <img src="{% static 'images/new_yark_new.jpg' %}" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p><center><font>New York City {{newyork_cost}}/-</font></center></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+ </div>
+
+
+
+    <div class="container" style="background-color:#F2D8D8">
+        <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/tour/register_package/" target="_blank">
+          <img src="{% static 'images/hong_kong_new.jpg' %}" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p><center> <font>Hong Kong {{london_cost}}/-</font></center></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/tour/register_package/" target="_blank">
+          <img src="{% static 'images/bali_new.jpeg' %}" alt="Nature" style="width:100%">
+          <div class="caption">
+            <p> <center><font>Bali {{dubai_cost}}/-</font></center></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/tour/register_package/" target="_blank">
+          <img src="{% static 'images/switzerland.jpeg' %}" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p><center><font>New York City {{newyork_cost}}/-</font></center></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+
+{%endblock %}

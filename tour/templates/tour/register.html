@@ -1,0 +1,35 @@
+{% extends "tour/home.html"%}
+{% load static %}
+{%block head%}
+<title>Register </title>
+<link rel="stylesheet" href="{% static 'css/register.css' %}"/>
+{%endblock%}
+{% block body%}
+    <table bgcolor="white">
+    <tr>
+        <td>
+            <center>
+   <form class="regitration_form" action="/add_register_customer_submit/" method="post" method="get">
+    {% csrf_token %}
+    <font size="8"></font><center>
+       <b>Registration Form</b>
+   </center></h1>
+   <p>Name: <input type="text" name="nm" placeholder="Name"/> </p>
+   <p>Age: <input type="number" name="age" placeholder="Age"/> </p>
+   <p>Mobile: <input type="text" name="mob" placeholder="Mobile"/> </p>
+   <p>Email: <input type="text" name="email" placeholder="mymail@mail.com"/> </p>
+   <p>Address: <input type="text" name="add" placeholder="Address"/> </p>
+   <p>Username: <input type="text" name="user" placeholder="Username"/></p>
+   <p>Password: <input type="text" name="pass" placeholder="pass123@"/></p>
+       <p><input type="Submit" value="Submit" /> </p>
+
+   </form>
+            </center>
+        </td>
+    </tr>
+    </table>
+    <div class="bottom" >
+    <img width="100%" height="100%" src="{% static 'images/login/loginbottom.jpg' %}" />
+</div>
+
+{%endblock %}

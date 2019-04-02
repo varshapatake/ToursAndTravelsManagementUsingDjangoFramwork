@@ -1,0 +1,32 @@
+{% extends "tour/customer.html"%}
+{% load static %}
+{%block head%}
+<title>Make Payment </title>
+<link rel="stylesheet" href="{% static 'css/register_package.css' %}"/>
+{%endblock%}
+{% block body%}
+     <table class="register" >
+         <tr>
+             <td>
+               <form class="regitration_form" action="/submit_register_packageinfo/" method="post">
+               {% csrf_token %}
+               <font size="8"></font><center>
+               <b>Registration Form</b>
+               </center></h1><center>
+                   <p><label >Name:</label><input type="text" name="nm" placeholder="Name"/> </p>
+                   <p>Gender: <input type="radio" name="gender" id="rb1" value="male" checked> Male
+                              <input type="radio" name="gender"  id="rb2" value="female"> Female
+                              <input type="radio" name="gender" id="rb3" value="other"> Other </p>
+                   <p>Age: <input type="number" name="age" placeholder="Age"/> </p>
+                   <p>Mobile: <input type="text" name="mob" placeholder="Mobile"/> </p>
+                   <p>Email: <input type="text" name="email" placeholder="mymail@mail.com"/> </p>
+                   <p>Package Name: <input type="text" name="email" placeholder="shimala"/> </p>
+
+                   <p>No Of People: <input type="text" name="no" placeholder="Address"/> </p>
+                   <p><input type="Submit" value="Submit" /> </p>
+                   </center>
+               </form>
+             </td>
+       </tr>
+   </table>
+</html>

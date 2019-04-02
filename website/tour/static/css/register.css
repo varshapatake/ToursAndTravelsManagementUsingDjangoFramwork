@@ -1,0 +1,33 @@
+h1 center b{
+color: #FCA205;
+font-family: 'Lobster';
+}}
+
+
+ body font{
+ text-shadow: 2px 2px 5px gray;
+ }
+
+input {
+    padding: 0;
+    height: 30px;
+    position: relative;
+
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 16px;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+
+}
+td{
+height:400px;
+width:1500px;
+padding:10px;
+
+}
+.bottom{
+height:300px;
+}
+

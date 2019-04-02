@@ -1,0 +1,55 @@
+{% extends "tour/customer.html"%}
+{% load static %}
+{%block head%}
+<title>Register </title>
+<link rel="stylesheet" href="{% static 'css/validate_user_info.css' %}"/>
+{%endblock%}
+{% block body%}
+
+                 <table class="validate_user" width="100%" height="500px"  style="background-color:#F2D8D8">
+                     {% if customer %}
+                     {% for customers in customer%}
+                     {%ifequal customers.username username%}
+                     <tr>
+                     <td ><center><img width="100px" height="100px" src="{% static 'images/profilejpg.jpg' %}" /> </center></td>
+                     <td colspan="2"><font size="4"><b> {{customers.name}}</b></font><br><br><br><hr></td>
+                     </tr>
+                     <tr>
+                         <td width="500px"><center> Name :</center></td>
+                         <td>{{customers.name}}</td>
+                     </tr>
+                      <tr>
+                         <td><center> Age :</center></td>
+                         <td>{{customers.age}}</td>
+                     </tr>
+                      <tr>
+                         <td><center>Mobile :</center></td>
+                         <td>{{customers.mobile}}</td>
+                     </tr>
+                      <tr>
+                         <td><center>Email :</center></td>
+                         <td>{{customers.email}}</td>
+                      </tr>
+                      <tr>
+                         <td><center>Address :</center></td>
+                         <td>{{customers.address}}</td>
+                      </tr>
+                      <tr>
+                         <td><center>Username :</center></td>
+                         <td>{{customers.username}}</td>
+                      </tr>
+                      <tr>
+                         <td><center>Password :</center><br><br><br></td>
+                         <td>{{customers.password}}<br><br><br></td>
+                      </tr>
+
+                     {%endifequal%}
+                   {%endfor%}
+                  {%endif%}
+                 </table>
+      <div class="bottom" >
+      <img width="100%" height="100%" src="{% static 'images/login/loginbottom.jpg' %}" />
+     </div>
+{%endblock %}
+
+

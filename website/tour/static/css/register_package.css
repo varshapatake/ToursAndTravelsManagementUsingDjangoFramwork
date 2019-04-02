@@ -1,0 +1,13 @@
+.regitration_form{
+text-color:black;
+
+margin:100px 150px;
+width:100%;
+background-color:white;
+opacity:0.6;
+padding:30px;
+}
+
+.register td{
+float:left;
+}

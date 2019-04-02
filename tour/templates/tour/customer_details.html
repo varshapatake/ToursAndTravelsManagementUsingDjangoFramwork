@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer details</title>
+</head>
+<body>
+{%if all_customers%}
+<p><font size="6"> Details of {{all_customers.name}}</font></p>
+<table  >
+    <tr>
+        <td>Name</td>
+        <td>{{all_customers.name}}</td>
+    </tr>
+     <tr>
+        <td>Age</td>
+        <td>{{all_customers.age}}</td>
+    </tr>
+     <tr>
+        <td>Mobile</td>
+        <td>{{all_customers.mobile}}</td>
+    </tr>
+     <tr>
+        <td>Email</td>
+        <td>{{all_customers.email}}</td>
+    </tr>
+     <tr>
+        <td>Address</td>
+        <td>{{all_customers.address}}</td>
+    </tr>
+     <tr>
+        <td>Username</td>
+        <td>{{all_customers.username}}</td>
+    </tr>
+     <tr>
+        <td>Password</td>
+        <td>{{all_customers.name}}</td>
+    </tr>
+</table>
+
+<li>
+
+</li>
+
+{%endif%}
+
+</body>
+</html>

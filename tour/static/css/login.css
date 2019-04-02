@@ -1,0 +1,19 @@
+table{
+table-layout: fixed;
+width:100%;
+}
+td{
+height:400px;
+width:calc(100%/4)%;
+padding:10px;
+border: 1px solid black;
+}
+.bottom{
+height:300px;
+}
+
+.topdiv {
+    background-color:gray  ;
+    margin-top: 0;
+    padding: 15px 20px 20px 20px;
+}

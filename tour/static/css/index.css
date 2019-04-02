@@ -1,0 +1,27 @@
+{% load static %}
+h1 center{
+color: #FCA205;
+font-family: 'Lobster';
+}
+table{
+table-layout: fixed;
+width:100%;
+}
+td{
+height:200px;
+width:calc(100%/4)%;
+padding:10px;
+border: 4px solid white;
+}
+.topseconddiv1{
+margin-top:10px;
+background:#BFAFE5  ;
+}
+
+.centerdiv{
+background-color: gray;
+}
+.head .first{
+background-image:url{{% static 'images/birlamandir.jpg' %}};
+background-position:right;
+}

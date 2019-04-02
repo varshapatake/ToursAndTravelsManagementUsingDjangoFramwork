@@ -1,0 +1,47 @@
+{% load static %}
+
+body{
+background-image: url("{% static 'images/AbountUstBottom2.jpg' %}");
+}
+h1 center{
+color: white;
+font-family: 'Lobster';
+}
+.topdiv {
+    background-color:gray  ;
+    margin-top: 0;
+    padding: 15px 20px 20px 20px;
+}
+.topseconddiv {
+
+    background-color: black;
+    margin-top: 0;
+    padding: 20px 20px 60px 60px;
+}
+.topseconddiv a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color:black;
+}
+.topseconddiv a:hover {
+  background-color:white;
+  color: blue;
+}
+
+.topseconddiv a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.homeback {
+   background-image: url("{% static 'images/AbountUstBottom2.jpg' %}");
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;top:0px;
+}
+

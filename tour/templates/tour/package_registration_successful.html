@@ -1,0 +1,27 @@
+{% extends "tour/customer.html"%}
+{% load static %}
+{%block head%}
+<title>Register </title>
+<link rel="stylesheet" href="{% static 'css/validate_user_info.css' %}"/>
+
+{%endblock%}
+{% block body%}
+     <table class="register"  width="100%">
+         <tr>
+             <td height="400px" >
+                  <center>
+
+              <font size="8" color="white">Regitration successfull</font><br><br>
+               <form class="inline_form" action="/register_package/"  method="get">
+               {% csrf_token %}
+                   <p><input type="Submit" class="btn btn-primary active" value="register another user" /> </p>
+
+               </form>
+                  </center>
+             </td>
+       </tr>
+   </table>
+<div class="bottom" >
+    <img width="100%" height="100%" src="{% static 'images/login/loginbottom.jpg' %}" />
+</div>
+{%endblock %}
